@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a.active {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  #about-hero {
+    background: url('images/image_3.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+  }
+  
+  #about-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* About Content */
+  #about-content {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  #about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f04e30;
+  }
+  
+  #about-content p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  /* Team Profiles */
+  .team-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .profile {
+    max-width: 300px;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .profile h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .profile p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+  }
+  
